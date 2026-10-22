@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172c27">
+  <title>Jungle Chase — The jungle is on your heels</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header><a class="brand" href="./index.html"><span class="brand-icon">↟</span> WILD ARCADE</a><span class="edition">01 / THE JUNGLE SERIES</span></header>
+    <section class="heading"><div><p class="eyebrow">RUN. JUMP. DON'T LOOK BACK.</p><h1>Jungle <em>Chase.</em></h1></div><p class="intro">One ancient road. Three ways forward.<br>And Modi right on your heels.</p></section>
+    <section class="game" aria-label="Jungle Chase game">
+      <canvas id="canvas" aria-label="Three lane jungle runner. Use left and right arrows to move and space to jump."></canvas>
+      <div class="hud"><div class="distance"><span>DISTANCE</span><strong id="score">0 <small>m</small></strong></div><div class="hud-right"><div class="best"><span>PERSONAL BEST</span><strong id="best">0 m</strong></div><button id="pause" class="pause" aria-label="Pause game" disabled>Ⅱ</button></div></div>
+      <div class="overlay" id="overlay"><div class="panel"><span class="pill" id="pill">THE CHASE IS ON</span><h2 id="title">Got a head start.<br>Make it count.</h2><p id="message">Dodge the gaps or jump right over them.<br>Miss your step, and Modi catches up.</p><button id="start" class="primary">Let’s run <span>↗</span></button><span class="hint" id="hint">SPACE TO START · ARROWS TO MOVE</span></div></div>
+      <div class="live-status" id="status" aria-live="polite"></div>
+      <div class="scene-label"><i></i> ANCIENT JUNGLE ROAD</div>
+    </section>
+    <section class="bottom"><div class="controls"><span class="control-label">YOUR MOVES</span><span><kbd>←</kbd><kbd>→</kbd> Change lane</span><span><kbd>SPACE</kbd> Jump</span><span><kbd>P</kbd> Pause</span></div><span class="tip">Stay light on your feet.</span></section>
+    <div class="touch-controls" aria-label="Touch controls"><button id="left" aria-label="Move left">←</button><button id="jump">JUMP ↑</button><button id="right" aria-label="Move right">→</button></div>
+    <footer><span>Fictional arcade chase · Stylized character likeness.</span><span>NO FINISH LINE. JUST ONE MORE TRY.</span></footer>
+  </main>
+</body>
+</html>
